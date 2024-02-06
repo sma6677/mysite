@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    h1 {
+        text-align: center;
+    }
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.logo-container {
+    width: auto;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background-color: #000;
+    text-align: center;
+    border-radius: 5px;
+}
+aside {
+    float: left;
+    width: 20%;
+    height: 100%
+}
+main {
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    clear: both;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+/* Responsive image handling */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clearfix for floating elements */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Additional media query for responsiveness */
+@media (max-width: 768px) {
+    header, nav, aside, main, footer {
+        float: none;
+        width: 100%;
+    }
+
+    aside, main {
+        height: auto;
+    }
+}
